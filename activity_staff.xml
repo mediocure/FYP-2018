@@ -7,20 +7,22 @@
     android:background="@drawable/mainbackground"
     tools:context=".StaffActivity">
 
-    <ImageButton
-        android:id="@+id/backButton"
+    <TextView
+        android:id="@+id/logoutTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:background="@null"
+        android:clickable="true"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Logout"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0"
-        app:srcCompat="@drawable/backbutton" />
+        app:layout_constraintVertical_bias="0" />
 
     <TextView
         android:id="@+id/welcomeTV"

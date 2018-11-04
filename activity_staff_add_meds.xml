@@ -63,9 +63,7 @@
         android:textColor="@color/colorPrimaryDark"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/searchSpinner"
-        app:layout_constraintStart_toStartOf="@+id/searchSpinner"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="@+id/searchSpinner" />
 
     <Spinner
         android:id="@+id/searchSpinner"
@@ -91,8 +89,6 @@
         android:textColor="@color/colorPrimaryDark"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/dosageSpinner"
-        app:layout_constraintEnd_toEndOf="@+id/searchTV"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/dosageSpinner" />
 
     <Spinner
@@ -141,11 +137,7 @@
         android:textColor="@color/colorPrimaryDark"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/freqSpinner"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@id/freqSpinner"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="@id/freqSpinner" />
 
 
     <Spinner
@@ -170,8 +162,6 @@
         android:textColor="@color/colorPrimaryDark"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/methodSpinner"
-        app:layout_constraintEnd_toEndOf="@+id/dosageTV"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/methodSpinner" />
 
     <Spinner

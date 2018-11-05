@@ -116,13 +116,6 @@
         app:layout_constraintTop_toTopOf="@+id/confirmnewpasswordET"
         app:srcCompat="@drawable/hidepasswordimageview" />
 
-    <View
-        android:id="@+id/bottomborder"
-        android:layout_width="wrap_content"
-        android:layout_height="2dp"
-        android:background="#FFFFFF"
-        app:layout_constraintTop_toTopOf="@id/homeNavigation" />
-
     <Button
         android:id="@+id/savepwButton"
         android:layout_width="120dp"
@@ -135,6 +128,13 @@
         app:layout_constraintBottom_toTopOf="@+id/homeNavigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/bottomborder"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="#FFFFFF"
+        app:layout_constraintTop_toTopOf="@id/homeNavigation" />
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/homeNavigation"

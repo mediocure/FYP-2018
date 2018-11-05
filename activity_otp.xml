@@ -28,33 +28,44 @@
         android:id="@+id/otpTV"
         android:layout_width="280dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
         android:fontFamily="@font/roboto_regular"
         android:text="Enter the 6 digit code sent to your registered phone number."
         android:textColor="@color/colorPrimaryDark"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/nricET"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/nricET"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="120dp"
-        android:background="@drawable/et_border"
-        android:ems="8"
-        android:fontFamily="@font/roboto_regular"
-        android:hint="Confirmation code"
-        android:gravity="center"
-        android:paddingLeft="10dp"
-        android:paddingTop="5dp"
-        android:paddingRight="10dp"
-        android:paddingBottom="5dp"
-        android:textColorLink="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/verifyButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otpTV"
+        app:layout_constraintVertical_bias="0.5">
+
+        <EditText
+            android:id="@+id/nricsET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_border"
+            android:ems="8"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center_horizontal"
+            android:hint="Confirmation code"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColorLink="@color/colorPrimary"
+            app:layout_constraintBottom_toTopOf="@+id/verifyButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
 
     <ImageButton
         android:id="@+id/verifyButton"
@@ -64,6 +75,7 @@
         android:background="@null"
         app:layout_constraintBottom_toTopOf="@+id/resendcodeTV"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/verifybutton" />
 
@@ -79,6 +91,7 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/mainbackground"
-    tools:context=".StaffActivity">
+    tools:context=".Login">
 
     <ImageButton
         android:id="@+id/backButton"
@@ -88,9 +88,9 @@
         android:id="@+id/loginButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="150dp"
         android:background="@null"
-        app:layout_constraintBottom_toTopOf="@+id/accTV"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/loginbutton" />

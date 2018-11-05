@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item
+    android:id="@+id/homeNav"
+    android:title="Home"
+    android:icon="@drawable/homeimageview"
+    android:iconTint="@color/colorAccent"/>
+
+    <item
+        android:id="@+id/AddMedbut"
+        android:title="Add Med"
+        android:icon="@drawable/addmedimageview"
+        android:iconTint="@color/colorAccent"/>
+
+    <item
+        android:id="@+id/ViewApptbut"
+        android:title="View Appt"
+        android:icon="@drawable/viewapptimageview"
+        android:iconTint="@color/colorAccent"/>
+
+    <item
+        android:id="@+id/Forumbut"
+        android:title="Forum"
+        android:icon="@drawable/forumimageview"
+        android:iconTint="@color/colorAccent"/>
+
+
+</menu>

@@ -218,6 +218,13 @@
         app:layout_constraintStart_toEndOf="@id/changepwButton"
         app:layout_constraintTop_toBottomOf="@+id/genderSpinner" />
 
+    <View
+        android:id="@+id/bottomborder"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="#FFFFFF"
+        app:layout_constraintTop_toTopOf="@id/homeNavigation" />
+
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/homeNavigation"
         android:layout_width="match_parent"

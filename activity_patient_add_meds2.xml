@@ -41,7 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/roboto_bold"
-        android:text="Add Medicine"
+        android:text="Preview"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="24dp"
         android:textStyle="bold"
@@ -52,24 +52,8 @@
         app:layout_constraintVertical_bias="0.2" />
 
     <TextView
-        android:id="@+id/frewv2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="Preview"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/fretv2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/fretv2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/fretv2"
-        android:layout_width="330dp"
+        android:id="@+id/previewTV"
+        android:layout_width="350dp"
         android:layout_height="150dp"
         android:layout_marginTop="8dp"
         android:paddingLeft="10dp"
@@ -78,13 +62,14 @@
         android:paddingBottom="5dp"
         android:background="@drawable/bg_round"
         android:fontFamily="@font/roboto_regular"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp"
         android:hint="Take (medicine) , 2 pills , twice a day , 8.01am and 6.01pm "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addmedTV"
-        app:layout_constraintVertical_bias="0.2" />
+        app:layout_constraintVertical_bias="0.1" />
 
     <ImageButton
         android:id="@+id/addmedButton"
@@ -94,7 +79,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/homeNavigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fretv2"
+        app:layout_constraintTop_toBottomOf="@+id/previewTV"
         app:layout_constraintVertical_bias="0.4"
         app:srcCompat="@drawable/addmedbutton" />
 
@@ -114,4 +99,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottom_navi" />
+
 </android.support.constraint.ConstraintLayout>

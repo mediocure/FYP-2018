@@ -30,6 +30,7 @@
         app:srcCompat="@drawable/profileimageview" />
 
     <View
+        android:id="@+id/topborder"
         android:layout_width="wrap_content"
         android:layout_height="2dp"
         android:background="#FFFFFF"
@@ -59,7 +60,7 @@
         android:fontFamily="@font/roboto_medium"
         android:text="Prescribed Medications"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="20dp"
+        android:textSize="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -71,10 +72,10 @@
         android:id="@+id/prescribednotification"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/prescribed"
         app:layout_constraintStart_toStartOf="@+id/prescribedTV"
-        app:layout_constraintTop_toBottomOf="@+id/prescribedTV"
+        app:layout_constraintTop_toTopOf="@+id/prescribed"
         app:srcCompat="@drawable/notificationimageview" />
 
     <TextView
@@ -82,13 +83,14 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto_regular"
         android:text="Prescribed medication description"
-        app:layout_constraintBottom_toBottomOf="@+id/prescribednotification"
+        android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/prescribednotification"
-        app:layout_constraintTop_toTopOf="@+id/prescribednotification"
-        app:layout_constraintVertical_bias="0.4" />
+        app:layout_constraintTop_toBottomOf="@+id/prescribedTV" />
 
     <TextView
         android:id="@+id/personalTV"
@@ -98,7 +100,7 @@
         android:fontFamily="@font/roboto_medium"
         android:text="Personal Medications"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="20dp"
+        android:textSize="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -130,8 +132,10 @@
         android:id="@+id/personalTV1"
         android:layout_width="240dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginStart="8dp"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="18dp"
         android:text="Personal medication description"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -143,6 +147,8 @@
         android:layout_width="240dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="18dp"
         android:text="Timing 1 and 2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/personalbin1"
@@ -168,6 +174,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="80dp"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="18dp"
         android:text="Personal medication description"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -179,6 +187,8 @@
         android:layout_width="240dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="18dp"
         android:text="Timing 3 and 4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/personalbin1"
@@ -199,7 +209,7 @@
         app:srcCompat="@drawable/deleteimageview" />
 
     <View
-        android:id="@+id/view"
+        android:id="@+id/bottomborder"
         android:layout_width="wrap_content"
         android:layout_height="2dp"
         android:background="#FFFFFF"
@@ -212,8 +222,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_navi" />
-
-
+        app:menu="@menu/bottom_navi"
+        app:labelVisibilityMode="labeled"/>
 
 </android.support.constraint.ConstraintLayout>

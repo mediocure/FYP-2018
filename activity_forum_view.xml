@@ -7,157 +7,56 @@
     android:background="@drawable/individualbackground"
     tools:context=".ForumView">
 
-    <ImageView
-        android:id="@+id/medimateicon"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TextView
+        android:id="@+id/forumTV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="MediMate Forum Discussions"
+        android:textSize="18dp"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:gravity="center_horizontal"
+        android:paddingTop="7dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="@font/roboto_regular"
+        android:background="@drawable/bg_round"
+        android:backgroundTint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/medimateimageview" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/profileimageview"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginRight="24dp"
-        app:layout_constraintBottom_toBottomOf="@+id/medimateicon"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/medimateicon"
-        app:srcCompat="@drawable/profileimageview" />
-
-    <ImageView
-        android:id="@+id/profileclickedimageview"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginRight="24dp"
-        app:layout_constraintBottom_toBottomOf="@+id/medimateicon"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/medimateicon"
-        app:srcCompat="@drawable/profileclickedimageview" />
-
-    <View
-        android:id="@+id/topborder"
+        android:id="@+id/forumimageView"
         android:layout_width="wrap_content"
-        android:layout_height="2dp"
-        android:background="#FFFFFF"
-        app:layout_constraintTop_toBottomOf="@+id/medimateicon" />
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/closebutton" />
 
     <WebView
         android:id="@+id/webview"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        app:layout_constraintBottom_toTopOf="@id/bottomborder"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/topborder" />
+        app:layout_constraintBottom_toBottomOf="@id/forumTV"
+        app:layout_constraintEnd_toEndOf="@id/forumTV"
+        app:layout_constraintStart_toStartOf="@id/forumTV"
+        app:layout_constraintTop_toBottomOf="@id/forumTV" />
 
     <Button
         android:id="@+id/joinforum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
         android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="@+id/webview"
         app:layout_constraintEnd_toEndOf="@+id/webview"
         app:layout_constraintStart_toStartOf="@+id/webview"
-        app:layout_constraintTop_toBottomOf="@+id/topborder" />
-
-    <View
-        android:id="@+id/bottomborder"
-        android:layout_width="wrap_content"
-        android:layout_height="2dp"
-        android:layout_marginBottom="64dp"
-        android:background="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent" />
-
-    <ImageButton
-        android:id="@+id/homeButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/home"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/addmedButton"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageButton
-        android:id="@+id/homeclickedButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/homeclicked"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/homeButton"
-        app:layout_constraintStart_toStartOf="@+id/homeButton" />
-
-    <ImageButton
-        android:id="@+id/addmedButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/addmed"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/viewapptButton"
-        app:layout_constraintStart_toEndOf="@+id/homeButton" />
-
-    <ImageButton
-        android:id="@+id/addmedclickedButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/addmedclicked"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/addmedButton"
-        app:layout_constraintStart_toStartOf="@+id/addmedButton" />
-
-    <ImageButton
-        android:id="@+id/viewapptButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/viewappt"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/forumButton"
-        app:layout_constraintStart_toEndOf="@+id/addmedButton" />
-
-    <ImageButton
-        android:id="@+id/viewapptclickedButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/viewapptclicked"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/viewapptButton"
-        app:layout_constraintStart_toStartOf="@+id/viewapptButton" />
-
-    <ImageButton
-        android:id="@+id/forumButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/forum"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/viewapptButton" />
-
-    <ImageButton
-        android:id="@+id/forumclickedButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/forumclicked"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/forumButton"
-        app:layout_constraintStart_toStartOf="@+id/forumButton" />
+        app:layout_constraintTop_toTopOf="@+id/forumTV" />
 
 </android.support.constraint.ConstraintLayout>

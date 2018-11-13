@@ -83,13 +83,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
-        app:layout_constraintBottom_toBottomOf="@+id/prescribed"
+        app:layout_constraintBottom_toBottomOf="@+id/prescribedTV2"
         app:layout_constraintStart_toStartOf="@+id/prescribedTV"
-        app:layout_constraintTop_toTopOf="@+id/prescribed"
+        app:layout_constraintTop_toTopOf="@+id/prescribedTV1"
         app:srcCompat="@drawable/notificationimageview" />
 
     <TextView
-        android:id="@+id/prescribed"
+        android:id="@+id/prescribedTV1"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -101,6 +101,20 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/prescribednotification"
         app:layout_constraintTop_toBottomOf="@+id/prescribedTV" />
+
+    <TextView
+        android:id="@+id/prescribedTV2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/colorAccent"
+        android:text="Taken @ Time"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/prescribednotification"
+        app:layout_constraintTop_toBottomOf="@+id/prescribedTV1"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/personalTV"
@@ -128,16 +142,6 @@
         app:layout_constraintTop_toTopOf="@+id/personalTV1"
         app:srcCompat="@drawable/notificationimageview" />
 
-    <ImageView
-        android:id="@+id/personalnotification2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        app:layout_constraintBottom_toBottomOf="@+id/personalTV4"
-        app:layout_constraintStart_toStartOf="@+id/personalTV"
-        app:layout_constraintTop_toTopOf="@+id/personalTV3"
-        app:srcCompat="@drawable/notificationimageview" />
-
     <TextView
         android:id="@+id/personalTV1"
         android:layout_width="240dp"
@@ -157,8 +161,9 @@
         android:layout_width="240dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:fontFamily="@font/roboto_regular"
-        android:text="Timing 1 and 2"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/colorAccent"
+        android:text="Taken @ Time"
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/personalbin1"
@@ -176,46 +181,6 @@
         app:layout_constraintBottom_toBottomOf="@+id/personalTV2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/personalTV1"
-        app:srcCompat="@drawable/deleteimageview" />
-
-    <TextView
-        android:id="@+id/personalTV3"
-        android:layout_width="240dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="80dp"
-        android:fontFamily="@font/roboto_regular"
-        android:text="Personal medication description"
-        android:textSize="18dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/personalnotification2"
-        app:layout_constraintTop_toBottomOf="@+id/personalTV" />
-
-    <TextView
-        android:id="@+id/personalTV4"
-        android:layout_width="240dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:fontFamily="@font/roboto_regular"
-        android:text="Timing 3 and 4"
-        android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/personalbin1"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/personalnotification2"
-        app:layout_constraintTop_toBottomOf="@+id/personalTV3"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageView
-        android:id="@+id/personalbin2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:clickable="true"
-        app:layout_constraintBottom_toBottomOf="@+id/personalTV4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/personalTV3"
         app:srcCompat="@drawable/deleteimageview" />
 
     <View
